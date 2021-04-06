@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate deployment package
-        run: git archive --format=zip master -o deploy.zip
+        run: git archive --format=zip main -o deploy.zip
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v16
